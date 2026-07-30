@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — AR Property &amp; Builders</title>
+<meta name="description" content="Explore the full range of services from AR Property & Builders: construction, architecture, engineering, interior design, investment consultancy and more.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="assets/images/logo.png">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div id="page-veil" aria-hidden="true"></div>
+<div id="loading-screen" aria-hidden="true"><div class="loader-mark"><span>A</span><span>R</span></div><div class="loader-bar"><span></span></div></div>
+<div id="scroll-progress"></div>
+<div id="cursor-glow" aria-hidden="true"></div>
+<div id="toast-wrap"></div>
+
+<header class="site-header on-dark">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">
+      <span class="brand-mark"><img src="assets/images/logo.png" alt="AR Property &amp; Builders logo"></span>
+      <span class="brand-text"><b>AR Property</b><span>&amp; Builders</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="has-mega">
+          <a href="services.html" class="active">Services <svg class="caret" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.4"/></svg></a>
+          <div class="mega-menu">
+            <div class="mega-col">
+              <h4>Construction &amp; Design</h4>
+              <a href="services.html#construction">Construction</a>
+              <a href="services.html#architecture">Architecture</a>
+              <a href="services.html#interior-design">Interior Design</a>
+              <a href="services.html#engineering-consultancy">Engineering Consultancy</a>
+            </div>
+            <div class="mega-col">
+              <h4>Property &amp; Investment</h4>
+              <a href="services.html#property-development">Property Development</a>
+              <a href="services.html#investment-consultancy">Investment Consultancy</a>
+              <a href="services.html#facility-management">Facility Management</a>
+              <a href="services.html#property-maintenance">Property Maintenance</a>
+            </div>
+            <div class="mega-col">
+              <h4>Explore</h4>
+              <a href="about.html">About Us</a>
+              <a href="faq.html">FAQ</a>
+              <a href="contact.html">Get a Quote</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn search-trigger" aria-label="Search" data-tooltip="Search"><svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.6"/><path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+      <a href="contact.html" class="btn btn-primary btn-sm">Get a Quote</a>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="search-overlay"><div class="search-box"><button class="search-close" aria-label="Close search">✕</button><input type="text" placeholder="Search projects, services, pages…"></div></div>
+
+<nav class="mobile-nav" aria-label="Mobile">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="mn-meta"><span>+88 09658395048</span><span>arproperityandbuilders@gmail.com</span><span>Mirpur-1, Dhaka-1216</span></div>
+</nav>
+
+<main>
+<section class="page-hero photo" style="background-image:linear-gradient(100deg, rgba(7,22,46,.96) 0%, rgba(7,22,46,.66) 48%, rgba(7,22,46,.22) 100%), url('assets/images/services-hero-site.jpg')">
+  <div class="bp-grid" aria-hidden="true"><svg viewBox="0 0 1400 500" preserveAspectRatio="xMidYMid slice"><defs><pattern id="g3" width="56" height="56" patternUnits="userSpaceOnUse"><path d="M56 0H0V56" fill="none" stroke="#E6EAF2" stroke-width="1"/></pattern></defs><rect width="1400" height="500" fill="url(#g3)" opacity=".6"/></svg></div>
+  <div class="container" style="position:relative;z-index:2">
+    <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Services</span></div>
+    <p class="eyebrow">What We Offer</p>
+    <h1 data-reveal="up">Full-service real estate &amp; construction</h1>
+    <p class="tag-line" data-reveal="up" style="transition-delay:.1s">Twelve integrated disciplines, one accountable team — from first sketch to facility management.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="card-grid grid-3" data-reveal-group>
+
+      <div class="card" id="construction" data-service="construction" style="cursor:pointer">
+        <span class="card-num">01</span><span class="corner tl"></span><span class="corner br"></span>
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 21H21M5 21V7L12 3L19 7V21" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+        <h3>Construction</h3><p>Full-scale residential, commercial and industrial construction managed end to end by our in-house teams.</p>
+        <span class="card-link">View Full Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span>
+      </div>
+
+      <div class="card" id="property-development" data-service="property-development" style="cursor:pointer">
+        <span class="card-num">02</span><span class="corner tl"></span><span class="corner br"></span>
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 21V9L12 3L20 9V21H4Z" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+        <h3>Property Development</h3><p>Land-to-key development of apartments, plots and mixed-use communities.</p>
+        <span class="card-link">View Full Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span>
+      </div>
+
+      <div class="card" id="architecture" data-service="architecture" style="cursor:pointer">
+        <span class="card-num">03</span><span class="corner tl"></span><span class="corner br"></span>
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 9L12 2L21 9M5 9V22H19V9" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+        <h3>Architecture</h3><p>Concept design through construction documentation, led by licensed architects.</p>
+        <span class="card-link">View Full Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span>
+      </div>
+
+      <div class="card" id="interior-design" data-service="interior-design" style="cursor:pointer">
+        <span class="card-num">04</span><span class="corner tl"></span><span class="corner br"></span>
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 20L10 8L14 15L20 4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Interior Design</h3><p>Space planning and finishing packages tailored to residential and commercial interiors.</p>
+        <span class="card-link">View Full Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span>
+      </div>
+
+      <div class="card" id="engineering-consultancy" data-service="engineering-consultancy" style="cursor:pointer">
+        <span class="card-num">05</span><span class="corner tl"></span><span class="corner br"></span>
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2V22M2 12H22" stroke-width="1.6"/><circle cx="12" cy="12" r="9" stroke-width="1.6"/></svg></div>
+        <h3>Engineering Consultancy</h3><p>Structural, civil, electrical and MEP consultancy for developers and third parties.</p>
+        <span class="card-link">View Full Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span>
+      </div>
+
+      <div class="card" id="building-renovation" data-service="building-renovation" style="cursor:pointer">
+        <span class="card-num">06</span><span class="corner tl"></span><span class="corner br"></span>
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 12H21M3 6H21M3 18H21" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+        <h3>Building Renovation</h3><p>Structural upgrades, retrofits and modernisation of existing properties.</p>
+        <span class="card-link">View Full Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span>
+      </div>
+
+      <div class="card" id="land-development" data-service="land-development" style="cursor:pointer">
+        <span class="card-num">07</span><span class="corner tl"></span><span class="corner br"></span>
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21C12 21 4 15 4 9A8 8 0 0112 3A8 8 0 0120 9C20 15 12 21 12 21Z" stroke-width="1.6"/></svg></div>
+        <h3>Land Development</h3><p>Site assessment, permitting and infrastructure preparation for raw land.</p>
+        <span class="card-link">View Full Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span>
+      </div>
+
+      <div class="card" id="project-management" data-service="project-management" style="cursor:pointer">
+        <span class="card-num">08</span><span class="corner tl"></span><span class="corner br"></span>
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="2" stroke-width="1.6"/><path d="M9 9H15V15H9V9Z" stroke-width="1.6"/></svg></div>
+        <h3>Project Management</h3><p>Single-point accountability across budget, schedule and quality control.</p>
+        <span class="card-link">View Full Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span>
+      </div>
+
+      <div class="card" id="investment-consultancy" data-service="investment-consultancy" style="cursor:pointer">
+        <span class="card-num">09</span><span class="corner tl"></span><span class="corner br"></span>
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 3V21H21" stroke-width="1.6" stroke-linecap="round"/><path d="M7 15L11 10L14 13L20 6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Investment Consultancy</h3><p>Portfolio guidance and ROI analysis for property investors.</p>
+        <span class="card-link">View Full Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span>
+      </div>
+
+      <div class="card" id="legal-assistance" data-service="legal-assistance" style="cursor:pointer">
+        <span class="card-num">10</span><span class="corner tl"></span><span class="corner br"></span>
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M9 12L11 14L15 10" stroke-width="1.6" stroke-linecap="round"/><rect x="3" y="4" width="18" height="16" rx="2" stroke-width="1.6"/></svg></div>
+        <h3>Legal Assistance</h3><p>Title verification, documentation and regulatory compliance support.</p>
+        <span class="card-link">View Full Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span>
+      </div>
+
+      <div class="card" id="facility-management" data-service="facility-management" style="cursor:pointer">
+        <span class="card-num">11</span><span class="corner tl"></span><span class="corner br"></span>
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 21V9L12 3L20 9V21" stroke-width="1.6"/><circle cx="12" cy="14" r="2" stroke-width="1.6"/></svg></div>
+        <h3>Facility Management</h3><p>Ongoing operations, maintenance and tenant services after handover.</p>
+        <span class="card-link">View Full Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span>
+      </div>
+
+      <div class="card" id="property-maintenance" data-service="property-maintenance" style="cursor:pointer">
+        <span class="card-num">12</span><span class="corner tl"></span><span class="corner br"></span>
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 8V12L15 15" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke-width="1.6"/></svg></div>
+        <h3>Property Maintenance</h3><p>Scheduled inspections and upkeep programs that protect asset value.</p>
+        <span class="card-link">View Full Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--surface-1)">
+  <div class="container">
+    <div class="section-head center" data-reveal="up"><p class="eyebrow" style="justify-content:center">Our Process</p><h2>How we deliver, step by step</h2></div>
+    <div class="process-line" data-reveal-group>
+      <div class="process-step active"><span class="pnum">01</span><h4>Consultation</h4><p>Understanding your goals &amp; budget</p></div>
+      <div class="process-step"><span class="pnum">02</span><h4>Design</h4><p>Architecture &amp; engineering plans</p></div>
+      <div class="process-step"><span class="pnum">03</span><h4>Approval</h4><p>Permits &amp; regulatory clearance</p></div>
+      <div class="process-step"><span class="pnum">04</span><h4>Construction</h4><p>Managed build with QC checkpoints</p></div>
+      <div class="process-step"><span class="pnum">05</span><h4>Handover</h4><p>Final inspection &amp; keys delivered</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cta-band" data-reveal="zoom">
+      <h2>Not sure which service you need?</h2>
+      <p>Tell us about your project and our team will recommend the right path forward.</p>
+      <div class="hero-cta" style="justify-content:center"><a href="contact.html" class="btn btn-primary">Talk to Our Team</a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="modal-overlay" id="serviceModal">
+  <div class="modal-box">
+    <button class="modal-close" aria-label="Close">✕</button>
+    <div class="modal-body" id="serviceModalBody"></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="brand"><span class="brand-mark"><img src="assets/images/logo.png" alt="AR Property &amp; Builders logo"></span><span class="brand-text"><b>AR Property</b><span>&amp; Builders</span></span></a>
+      <p>Building residential, commercial and industrial developments engineered for permanence.</p>
+    </div>
+    <div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="about.html">About Us</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></div>
+    <div class="footer-col"><h4>Services</h4><a href="services.html#construction">Construction</a><a href="services.html#architecture">Architecture</a><a href="services.html#interior-design">Interior Design</a><a href="services.html#property-development">Property Development</a></div>
+    <div class="footer-col">
+      <h4>Get In Touch</h4>
+      <div class="contact-row"><svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92V19.92C22 20.47 21.55 20.92 21 20.9C10.4 20.29 2.7 12.6 2.1 2C2.08 1.45 2.53 1 3.08 1H6.08C6.6 1 7.03 1.4 7.08 1.92C7.2 3.13 7.47 4.32 7.87 5.44C8.03 5.9 7.92 6.42 7.56 6.78L6.1 8.24C7.5 11.05 9.95 13.5 12.76 14.9L14.22 13.44C14.58 13.08 15.1 12.97 15.56 13.13C16.68 13.53 17.87 13.8 19.08 13.92C19.6 13.97 20 14.4 20 14.92" stroke-width="1.4"/></svg><span>+88 09658395048</span></div>
+      <div class="contact-row"><svg viewBox="0 0 24 24" fill="none"><path d="M4 4H20V20H4V4Z" stroke-width="1.4"/><path d="M4 6L12 13L20 6" stroke-width="1.4"/></svg><span>arproperityandbuilders@gmail.com</span></div>
+      <div class="contact-row"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21C12 21 5 15 5 9.5A7 7 0 0119 9.5C19 15 12 21 12 21Z" stroke-width="1.4"/></svg><span>House #23/1, Main Road, Mirpur-1, Dhaka-1216, Bangladesh</span></div>
+    </div>
+  </div>
+  <div class="container footer-bottom"><span>© 2026 AR Property &amp; Builders. All rights reserved.</span></div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" width="18" height="18"><path d="M12 19V5M5 12L12 5L19 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+
+<script src="js/main.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/animation.js"></script>
+<script src="js/counter.js"></script>
+<script src="js/forms.js"></script>
+<script src="js/components.js"></script>
+<script>
+(function(){
+  "use strict";
+  var serviceDetails = {
+    "construction": {
+      title:"Construction",
+      tagline:"Full-scale residential, commercial and industrial construction managed end to end by our in-house teams — from foundation to final finishing.",
+      specs:[["Typical Timeline","8–24 Months (Project Dependent)"],["Structure Type","RCC Reinforced Concrete Frame"],["Standards","BNBC Compliant Construction"],["Warranty","Structural Warranty Included"]],
+      includes:["Site mobilisation and foundation works","Complete RCC frame, brickwork and roofing","Electrical, plumbing and sanitary rough-in","Waterproofing and structural finishing","Dedicated site engineer throughout","Weekly progress reports with photos","Multi-stage quality inspection","Final handover documentation"]
+    },
+    "property-development": {
+      title:"Property Development",
+      tagline:"End-to-end development of apartments, plots and mixed-use communities — from land acquisition to resident handover.",
+      specs:[["Scope","Land-to-Key Development"],["Project Types","Apartments, Plots, Mixed-Use"],["Approval Support","RAJUK Documentation"],["Delivery","Turnkey Handover"]],
+      includes:["Site feasibility and land assessment","Master planning and unit mix design","RAJUK approval and legal documentation","Construction management through completion","Sales and handover coordination","Post-handover facility transition"]
+    },
+    "architecture": {
+      title:"Architecture",
+      tagline:"Concept design through construction documentation, led by licensed architects who balance aesthetics with buildability.",
+      specs:[["Deliverables","2D Drawings & 3D Visualization"],["Design Stages","Concept to Construction Docs"],["Team","Licensed In-House Architects"],["Compliance","RAJUK-Ready Drawings"]],
+      includes:["Site analysis and design brief","Concept design with 3D visualization","Floor plan and elevation development","Structural coordination with engineers","Construction documentation set","RAJUK submission drawings"]
+    },
+    "interior-design": {
+      title:"Interior Design",
+      tagline:"Space planning and finishing packages tailored to residential and commercial interiors, delivered to move-in standard.",
+      specs:[["Scope","Turnkey Interior Finishing"],["Project Types","Residential & Commercial"],["Materials","Premium Quality Finishes"],["Warranty","1-Year Fittings Warranty"]],
+      includes:["Space planning and material selection","Flooring, ceiling and wall finishing","Modular kitchen and cabinetry","Lighting design and electrical fittings","Bathroom and utility fit-out","Final styling and snag-free handover"]
+    },
+    "engineering-consultancy": {
+      title:"Engineering Consultancy",
+      tagline:"Structural, civil, electrical and MEP consultancy for developers and third parties who need expert technical oversight.",
+      specs:[["Disciplines","Structural, Civil, Electrical, MEP"],["Deliverables","Engineering Reports & Drawings"],["Standards","BNBC & International Best Practice"],["Ideal For","Developers & Third-Party Projects"]],
+      includes:["Structural design and load analysis","Soil investigation coordination","MEP system planning","Third-party design review","Site supervision and quality checks","Technical documentation and sign-off"]
+    },
+    "building-renovation": {
+      title:"Building Renovation",
+      tagline:"Structural upgrades, retrofits and modernisation of existing properties, executed with minimal disruption to occupants.",
+      specs:[["Typical Timeline","4–16 Weeks (Project Dependent)"],["Scope","Cosmetic to Structural Remodeling"],["Assessment","Structural Safety Evaluation"],["Execution","Phased, Low-Disruption Works"]],
+      includes:["Structural condition assessment","Floor addition and extension engineering","Kitchen and bathroom renovation","Electrical rewiring and plumbing upgrades","Façade and waterproofing restoration","Final inspection and handover"]
+    },
+    "land-development": {
+      title:"Land Development",
+      tagline:"Site assessment, permitting and infrastructure preparation for raw land — getting your plot fully construction-ready.",
+      specs:[["Typical Timeline","3–6 Weeks"],["Deliverables","Site Feasibility Report"],["Survey Type","Topographic & Boundary Survey"],["Compliance","Zoning & Land-Use Verification"]],
+      includes:["Topographic and boundary survey","Soil investigation and geotechnical testing","Land-use classification and zoning check","Utility availability assessment","Site grading and earthwork planning","Construction-readiness report"]
+    },
+    "project-management": {
+      title:"Project Management",
+      tagline:"Single-point accountability across budget, schedule and quality control, so every stakeholder has one number to call.",
+      specs:[["Scope","Full Project Lifecycle Oversight"],["Reporting","Weekly Progress Updates"],["Cost Control","Milestone-Based Billing"],["Team","Dedicated Project Manager"]],
+      includes:["Master schedule and milestone planning","Vendor and subcontractor coordination","Budget tracking and cost control","Quality assurance inspections","Risk management and issue resolution","Client reporting and sign-off"]
+    },
+    "investment-consultancy": {
+      title:"Investment Consultancy",
+      tagline:"Portfolio guidance and ROI analysis for property investors looking to make informed, well-timed decisions.",
+      specs:[["Typical Timeline","1–2 Weeks"],["Deliverables","Valuation & Feasibility Report"],["Ideal For","Buyers, Investors & Landowners"],["Format","One-on-One Advisory Session"]],
+      includes:["Property and land valuation","Investment feasibility and ROI analysis","Market research and trend review","Legal document verification support","Development feasibility studies","Risk assessment and recommendations"]
+    },
+    "legal-assistance": {
+      title:"Legal Assistance",
+      tagline:"Title verification, documentation and regulatory compliance support so your transaction stands on solid legal ground.",
+      specs:[["Scope","Title & Documentation Review"],["Compliance","RAJUK Regulatory Support"],["Ideal For","Buyers, Sellers & Developers"],["Deliverables","Verified Legal Documentation"]],
+      includes:["Title deed and mutation verification","Khatian and tax documentation review","RAJUK approval status check","Sale agreement and deed support","Regulatory compliance guidance","Dispute risk assessment"]
+    },
+    "facility-management": {
+      title:"Facility Management",
+      tagline:"Ongoing operations, maintenance and tenant services after handover, keeping your property running smoothly for years.",
+      specs:[["Scope","Post-Handover Operations"],["Services","Maintenance & Tenant Support"],["Availability","Scheduled & On-Call Support"],["Ideal For","Owners, Tenants & Investors"]],
+      includes:["Preventive maintenance scheduling","Building systems monitoring","Tenant service coordination","Security and access management","Vendor and utility management","Periodic condition reporting"]
+    },
+    "property-maintenance": {
+      title:"Property Maintenance",
+      tagline:"Scheduled inspections and upkeep programs that protect asset value over the full life of your property.",
+      specs:[["Scope","Scheduled Inspection Programs"],["Frequency","Quarterly & Annual Plans"],["Coverage","Structural, MEP & Cosmetic"],["Ideal For","Long-Term Asset Protection"]],
+      includes:["Scheduled structural inspections","MEP systems servicing","Waterproofing and roof checks","Cosmetic touch-ups and repairs","Maintenance history documentation","Priority response for urgent issues"]
+    }
+  };
+
+  var modal = document.getElementById("serviceModal");
+  var modalBody = document.getElementById("serviceModalBody");
+  if(!modal) return;
+
+  function openServiceModal(slug){
+    var d = serviceDetails[slug];
+    if(!d) return;
+    modalBody.innerHTML =
+      '<span class="modal-eyebrow">Service</span>' +
+      '<h2 class="modal-title">' + d.title + '</h2>' +
+      '<p class="modal-tagline">' + d.tagline + '</p>' +
+      '<div class="modal-specs">' + d.specs.map(function(s){
+        return '<div class="modal-spec"><span class="spec-k">' + s[0] + '</span><span class="spec-v">' + s[1] + '</span></div>';
+      }).join('') + '</div>' +
+      '<div class="modal-section"><h4>What\'s Included</h4><ul class="modal-list">' +
+      d.includes.map(function(i){
+        return '<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"/></svg>' + i + '</li>';
+      }).join('') + '</ul></div>' +
+      '<div class="modal-cta"><a href="contact.html" class="btn btn-primary">Get a Quote</a></div>';
+    modal.classList.add("open");
+    document.body.style.overflow = "hidden";
+  }
+  function closeServiceModal(){
+    modal.classList.remove("open");
+    document.body.style.overflow = "";
+  }
+
+  document.querySelectorAll("[data-service]").forEach(function(card){
+    card.addEventListener("click", function(){ openServiceModal(card.getAttribute("data-service")); });
+  });
+  modal.querySelector(".modal-close").addEventListener("click", closeServiceModal);
+  modal.addEventListener("click", function(e){ if(e.target === modal) closeServiceModal(); });
+  document.addEventListener("keydown", function(e){ if(e.key === "Escape") closeServiceModal(); });
+
+  // Open directly if arriving via #anchor (from nav mega menu)
+  if(location.hash){
+    var slug = location.hash.replace("#","");
+    if(serviceDetails[slug]) openServiceModal(slug);
+  }
+})();
+</script>
+</body>
+</html>

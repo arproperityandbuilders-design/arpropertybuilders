@@ -1,0 +1,57 @@
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+
+/* Ultra-wide */
+@media(min-width:1600px){
+  :root{--container:1440px}
+}
+
+/* Laptop */
+@media(max-width:1180px){
+  .hero-inner{grid-template-columns:1fr;gap:var(--space-5)}
+  .hero-visual{max-width:440px;margin-inline:auto;order:-1}
+  nav.main-nav > ul{gap:var(--space-3)}
+  .footer-top{grid-template-columns:1fr 1fr}
+  .grid-4{grid-template-columns:repeat(2,1fr)}
+}
+
+/* Tablet */
+@media(max-width:920px){
+  nav.main-nav,.header-actions .icon-btn:not(.search-trigger){display:none}
+  .hamburger{display:block}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .stat-item{border-right:none;border-bottom:1px solid rgba(255,255,255,.08)}
+  .split{grid-template-columns:1fr}
+  .split.reverse{direction:ltr}
+  .grid-3{grid-template-columns:repeat(2,1fr)}
+  .process-line{grid-template-columns:repeat(2,1fr);row-gap:var(--space-4)}
+  .process-line::before{display:none}
+  .form-row{grid-template-columns:1fr}
+}
+
+/* Mobile */
+@media(max-width:640px){
+  :root{--space-7:4rem;--space-8:5rem}
+  .container{padding-inline:var(--space-3)}
+  .hero{
+    background:
+      linear-gradient(180deg,var(--navy) 0%,rgba(7,22,46,.88) 55%,rgba(7,22,46,.6) 100%),
+      url('../assets/images/hero-building.jpg') center 30% / cover no-repeat;
+  }
+  .hero-copy{max-width:none}
+  .hero-cta{flex-direction:column;align-items:stretch}
+  .hero-cta .btn{width:100%}
+  .hero-meta{gap:var(--space-3)}
+  .grid-3,.grid-4,.grid-2{grid-template-columns:1fr}
+  .footer-top{grid-template-columns:1fr;gap:var(--space-4)}
+  .mega-menu{position:fixed;top:var(--header-h);left:var(--space-3);right:var(--space-3);width:auto;grid-template-columns:1fr}
+  .testi-card{min-width:88vw}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .cta-band{padding:var(--space-5) var(--space-3)}
+  h1{word-break:break-word}
+}
+
+@media(max-width:400px){
+  .brand-text span{display:none}
+}

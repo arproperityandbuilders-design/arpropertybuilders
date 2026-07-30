@@ -1,0 +1,77 @@
+/* ==========================================================================
+   AR PROPERTY & BUILDERS — DESIGN TOKENS
+   ========================================================================== */
+:root{
+  /* Color System */
+  --navy:#07162E;
+  --blue-deep:#0B3C91;
+  --blue-sec:#1A5FD0;
+  --blue-hover:#2962FF;
+  --white:#FFFFFF;
+  --gray-light:#F6F8FA;
+  --border:#E6EAF2;
+
+  --ink:#0E1B2E;
+  --ink-soft:#4A5A72;
+  --ink-faint:#8B98AC;
+
+  /* Surfaces */
+  --surface-0:var(--white);
+  --surface-1:var(--gray-light);
+  --surface-2:#EFF3F8;
+  --glass-bg:rgba(255,255,255,.62);
+  --glass-border:rgba(255,255,255,.45);
+  --navy-glass:rgba(7,22,46,.72);
+
+  /* Gradients — blue/white only */
+  --grad-primary:linear-gradient(135deg,var(--blue-deep) 0%,var(--blue-sec) 100%);
+  --grad-navy:linear-gradient(180deg,var(--navy) 0%,#0A2450 100%);
+  --grad-line:linear-gradient(90deg,transparent 0%,var(--blue-sec) 50%,transparent 100%);
+  --grad-radial-glow:radial-gradient(circle at 50% 50%,rgba(26,95,208,.18),transparent 70%);
+
+  /* Typography */
+  --font-display:'Space Grotesk',sans-serif;
+  --font-body:'Inter',sans-serif;
+  --font-ui:'Poppins',sans-serif;
+
+  --fs-hero:clamp(2.6rem,5.4vw,5.2rem);
+  --fs-h1:clamp(2.1rem,3.6vw,3.4rem);
+  --fs-h2:clamp(1.7rem,2.6vw,2.5rem);
+  --fs-h3:clamp(1.25rem,1.8vw,1.6rem);
+  --fs-lead:clamp(1.05rem,1.3vw,1.25rem);
+  --fs-body:1rem;
+  --fs-small:.875rem;
+  --fs-micro:.75rem;
+
+  /* Spacing */
+  --space-1:.5rem;
+  --space-2:1rem;
+  --space-3:1.5rem;
+  --space-4:2rem;
+  --space-5:3rem;
+  --space-6:4.5rem;
+  --space-7:7rem;
+  --space-8:9rem;
+
+  --container:1280px;
+  --container-narrow:820px;
+  --radius-sm:6px;
+  --radius-md:14px;
+  --radius-lg:24px;
+  --radius-pill:999px;
+
+  /* Shadow */
+  --shadow-sm:0 2px 8px rgba(7,22,46,.06);
+  --shadow-md:0 12px 32px rgba(7,22,46,.10);
+  --shadow-lg:0 24px 64px rgba(7,22,46,.14);
+  --shadow-blue:0 16px 40px rgba(26,95,208,.22);
+
+  /* Motion */
+  --ease-out:cubic-bezier(.16,1,.3,1);
+  --ease-inout:cubic-bezier(.65,0,.35,1);
+  --dur-fast:.22s;
+  --dur-mid:.5s;
+  --dur-slow:.9s;
+
+  --header-h:84px;
+}
