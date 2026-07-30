@@ -37,7 +37,7 @@
   .hero{
     background:
       linear-gradient(180deg,var(--navy) 0%,rgba(7,22,46,.88) 55%,rgba(7,22,46,.6) 100%),
-      url('../assets/images/hero-building.jpg') center 30% / cover no-repeat;
+      url('hero-building.jpg') center 30% / cover no-repeat;
   }
   .hero-copy{max-width:none}
   .hero-cta{flex-direction:column;align-items:stretch}

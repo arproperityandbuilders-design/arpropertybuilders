@@ -213,7 +213,7 @@ li.has-mega:hover .mega-menu{opacity:1;visibility:visible;pointer-events:auto;tr
   padding-top:var(--header-h);overflow:hidden;
   background:
     linear-gradient(90deg,var(--navy) 0%,var(--navy) 38%,rgba(7,22,46,.72) 58%,rgba(7,22,46,.25) 78%,rgba(7,22,46,.05) 100%),
-    url('../assets/images/hero-building.jpg') right center / cover no-repeat;
+    url('hero-building.jpg') right center / cover no-repeat;
 }
 .hero .bp-grid{opacity:.35;mix-blend-mode:overlay}
 .hero-copy h1,.hero-copy .eyebrow,.hero-copy .tag-line{color:var(--white)}
